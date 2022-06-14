@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" href="./Images/BitWeb Solutions alt icon with text no bg.png">
+    <title>Home | BitWeb Solutions</title>
+</head>
+<body>
+    <div class="page_container" id="page_container">
+        <div class="header">
+            <a href="index.html"><img src="./Images/BitWeb Solutions alt icon with text no bg.png" class="bitwebLogo" id="bitwebLogo"></a>
+
+            <nav class="navBarDesktop">
+                <a href="index.html" class="navItem" id="navHome">Home</a>
+                <a href="./assets/about.html" class="navItem" id="navAbout">About</a>
+                <a href="./assets/services.html" class="navItem" id="navServices">Services</a>
+                <a href="./assets/contact.html" class="navItem" id="navContact">Contact</a>
+            </nav>
+            <nav class="navBarMobile">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="./assets/about.html"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="./assets/services.html"><i class="fa-solid fa-computer"></i></a></li>
+                <li><a href="./assets/contact.html"><i class="fa-solid fa-phone"></i></a></li>
+            </nav>
+        </div>
+        <div class="welcomeContainer">
+            <div class="welcome">
+                <h1>Welcome to BitWeb Solutions!</h1>
+                <h3>What is BitWeb Solutions?</h3>
+                <p>The company name stands for Business IT & Web Solutions, and we're here to help with your IT needs!<br>
+                I've worked in the IT industry for many years, find out more about me <a href="./assets/about.html" class="link">here.</a>
+                </p>
+            </div>
+        </div>
+        <div class="mainContainer">
+            <div class="main">
+                <h1><a href="./assets/services.html" style="color: white;">Services</a></h1>
+                <p class="sb2">We offer a range of IT services, click the below tiles to find out more or click <a href="./assets/services.html"
+                    style="color: white;">
+                    here</a> for our full range of services.</p>
+                <p class="sb1">We offer a range of IT services, click the below tiles to find out more or tap  <a href="./assets/services.html">
+                    <i class="fa-solid fa-computer" style="filter: invert(100%); margin: 0px 3px 0px 3px;"></i></a>  for our full range of services.</p>
+                <div>
+                    <button id="webConsultancy" class="serviceWidget">Business website</button>
+                    <button id="emailAssistance" class="serviceWidget">Business email</button>  
+                    <button id="socialMedia" class="serviceWidget">Social Media</button>
+                </div>
+            </div>
+        </div>
+        <div class="tContainer">
+            <div class="testimonials">
+                <h1>Testimonials</h1>
+                <p>-</p>
+                <p>Great place</p>
+            </div>
+        </div>
+        <div class="contactContainer">
+            <div class="contact">
+                <div class="contactinfo">
+                    <h1><a href="./assets/contact.html">Contact</a></h1>                    
+                </div> 
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="webConsultancyModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Business website</h2>
+                    <span id="close-web" class="close"><i class="fa-solid fa-circle-xmark"></i></span>
+                </div>
+                <div>
+                    <p>Need a website to promote your business? BitWeb Solutions can create bespoke designs 
+                        including your own branding for use across multiple device types so that no matter 
+                        what device your client is using, they'll find what they're looking for easily and quickly.</p>
+                </div>
+            </div>
+        </div>
+        <div id="emailAssistanceModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Business email</h2>
+                    <span id="close-email" class="close"><i class="fa-solid fa-circle-xmark"></i></span>
+                </div>
+                <div>
+                    <p>Having trouble knowing where to start? 
+                        BitWeb Solutions can get you sorted with a professional business email to contact your clients.</p>
+                </div>
+            </div>
+        </div>
+        <div id="socialMediaModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Social Media</h2>
+                    <span id="close-social" class="close"><i class="fa-solid fa-circle-xmark"></i></span>
+                </div>
+                <div>
+                    <p>Increase your social presence. 
+                        We can utilise so many tools and features on multiple social platforms to 
+                        maximise your impact and spread the word!</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/bba4cc1124.js" crossorigin="anonymous"></script>
+      <script>
+        // When the user clicks on the button, open the modal
+        document.getElementById("webConsultancy").onclick = function() {
+            document.getElementById("webConsultancyModal").style.display = "block";
+            document.getElementById("page_container").classList = "page_container-modal";
+        }
+        document.getElementById("emailAssistance").onclick = function() {
+            document.getElementById("emailAssistanceModal").style.display = "block";
+            document.getElementById("page_container").classList = "page_container-modal";
+        }
+        document.getElementById("socialMedia").onclick = function() {
+            document.getElementById("socialMediaModal").style.display = "block";
+            document.getElementById("page_container").classList = "page_container-modal";
+        }
+
+
+        // When the user clicks on <span> (x), close the modal
+        document.getElementById("close-web").onclick = function() {
+        document.getElementById("webConsultancyModal").style.display = "none";
+        document.getElementById("page_container").classList = "page_container";
+        }
+        document.getElementById("close-email").onclick = function() {
+        document.getElementById("emailAssistanceModal").style.display = "none";
+        document.getElementById("page_container").classList = "page_container";
+        }
+        document.getElementById("close-social").onclick = function() {
+        document.getElementById("socialMediaModal").style.display = "none";
+        document.getElementById("page_container").classList = "page_container";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == document.getElementById("webConsultancyModal")) {
+            document.getElementById("webConsultancyModal").style.display = "none";
+            document.getElementById("page_container").classList = "page_container";
+        }
+        }
+        window.onclick = function(event) {
+        if (event.target == document.getElementById("emailAssistanceModal")) {
+            document.getElementById("emailAssistanceModal").style.display = "none";
+            document.getElementById("page_container").classList = "page_container";
+        }
+        }
+        window.onclick = function(event) {
+        if (event.target == document.getElementById("socialMediaModal")) {
+            document.getElementById("socialMediaModal").style.display = "none";
+            document.getElementById("page_container").classList = "page_container";
+        }
+
+        document.getElementById("about").onclick = function() {
+            window.location.replace("./assets/about.html");
+        }
+        }
+    </script>
+    </div>
+</body>
+</html>

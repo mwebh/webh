@@ -1,0 +1,613 @@
+html {
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.page_container {
+    position: fixed;
+    display: flexbox;
+    flex-grow: 1;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(0deg, #dfdfdf, #ffffff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+.page_container-modal {
+    position: fixed;
+    display: flexbox;
+    flex-grow: 1;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(0deg, #dfdfdf, #ffffff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    animation-name: pagecontainermodal;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes pagecontainermodal {
+    100% {
+        filter: blur(2px);
+    }
+}
+.fa-brands {
+    transform: scale(150%);
+}
+
+hr {
+    border-color: #3b3b3b;
+    border-width: 1px;
+    width: 90%;
+}
+li {
+    list-style-type: none;
+    display: inline;
+    padding: 1rem 0rem;
+}
+
+.header {
+    top: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    position: fixed;
+    background-image: linear-gradient(180deg, white 0 60%, transparent 99% 100%);
+    z-index: 1;
+    overflow:auto;
+    padding-bottom: .5rem;
+}
+
+.bitwebLogo {
+    width: 5rem;
+    margin: 0.5rem 0rem 0.5rem 0.5rem;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgb(54, 54, 54);
+    padding: 0px;
+    top: 0.5rem;
+    left:0.5rem;
+}
+
+.navBarDesktop {
+    display: none;
+}
+
+.navBarMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-column: 2;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+
+.welcomeContainer {
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    top: 8rem;
+    width: 100%;
+}
+.welcome {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.5);
+    animation-name: welcomebanner;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes welcomebanner {
+    100% {
+        box-shadow: -5px 5px 10px #414141;
+    }
+}
+
+.welcome h1 {
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+}
+.welcome h3 {
+    font-size: 1.2rem;
+    padding: 0rem 1rem;
+}
+.welcome p {
+    font-size: 1rem;
+    padding: 0rem 1rem 1rem 1rem;
+}
+
+.mainContainer {
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    margin: 10rem 0rem 0rem 0rem;
+    width: 100%;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    text-align: right;
+    background-color: #414141;
+    color: white;
+    padding: 0rem 0rem 2rem 0rem;
+}
+.main div {
+    display: flex;
+    flex-direction: column;
+}
+.main h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.main p {
+    font-size: 1rem;
+    padding: 0rem 1rem 1rem 1rem;
+}
+
+.serviceWidget {
+    border-radius: 5rem;
+    font-family: 'Comfortaa', cursive !important;
+    font-size: 1rem;
+    margin: 0.5rem;
+    font-weight: 400 !important;
+    padding: 0.7rem;
+    border: 2px solid #414141;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    background-color: #6d888d;
+    color: white;
+    box-shadow: inset 0px 0px 5px white;
+    border: 2px solid white;
+}
+.serviceWidget:hover {
+    background-color: #BDF2FD;
+    color: black;
+}
+
+
+.tContainer {
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    margin: 1rem 0rem 0rem 0rem;
+    width: 100%;
+}
+.testimonials {
+    width: 90%;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-image: linear-gradient(0deg, transparent, #6d888d);
+    margin-bottom: 3rem;
+}
+.testimonials h1 {
+    color: white;
+    text-shadow: 0px 0px 3px black;
+}
+
+.contactContainer {
+    position:relative;
+    bottom: 0vh;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    margin: 1rem 0rem 0rem 0rem;
+    width: 100%;
+}
+.contact {
+    width: 100%;
+    background-color: white;
+}
+.social-icons {
+    padding-bottom: 2rem;
+}
+.link {
+    color: #005B06;
+}
+:hover.link {
+    text-decoration: none;
+}
+.contact h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.contact p {
+    font-size: 1rem;
+    padding: 1rem;
+}
+.contactinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contact div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.servicesCont1 {
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+}
+.services1 {
+    width: 90%;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+.services1 h2 {
+    padding: 1rem;
+}
+.services1 p {
+    padding: 1rem;
+}
+
+.servicesCont2 {
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+}
+.services2 {
+    width: 90%;
+    border-radius: 0.5rem;
+    background-color: #414141;
+    text-align: right;
+    color: white;
+}
+.services2 h2 {
+    padding: 1rem;
+}
+.services2 p {
+    padding: 1rem;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+    margin: 0px;
+    padding: 0px;
+    transition: 0.3s;
+}
+:hover.icon {
+    filter: invert(100%);
+}
+
+.fa-solid {
+    transform: scale(120%);
+    filter: saturate(0);
+}
+.fa-circle-xmark {
+    position: relative;
+    top: .5rem;
+    right: .5rem;
+}
+
+.formContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 7rem 1rem 1rem 1rem;
+    width: 90%;
+}
+.contactForm input, textarea {
+    font-family: 'Comfortaa', cursive !important;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem !important;
+    border-top-right-radius: 0.3rem !important;
+    border-top-left-radius: 0.3rem !important;
+    border-color: transparent;
+    border-bottom: 2px solid #006a8d;
+}
+.contactForm textarea {
+    resize: none;
+    word-wrap: normal;
+}
+#Message {
+    background-color: white;
+    transition: .3s;
+}
+#Message:hover {
+    background-color: rgb(247, 247, 247);
+}
+
+.contactForm input{
+    background-color: white;
+    transition: .3s;
+}
+.contactForm input:hover {
+    background-color: rgb(247, 247, 247);
+}
+.contactForm button {
+    font-family: 'Comfortaa', cursive !important;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 30%;
+    border-radius: 0.3rem;
+    box-shadow: 3px 3px 10px black;
+    background-color: #006a8d;
+    color: white;
+    border: 1px solid white;
+}
+
+
+a {
+    color: #006a8d;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 0.5rem;
+    width: 80%; /* Could be more or less, depending on screen size */
+    animation-name: modalanim;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    position: relative;
+    opacity: 0;
+    top: -100px;
+  }
+  @keyframes modalanim {
+      100% {
+        box-shadow: -5px 5px 10px black;
+        top: 0px;
+        opacity: 1;
+      }
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    position: relative;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    top: -1rem;
+    right: 0rem;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header {
+      display: grid;
+      grid-template-columns: 95% 5%;
+  }
+
+  .sb1 {
+      display:block;
+      position: relative;
+  }
+  .sb2 {
+      display: none;
+  }
+  .service-icon {
+      width: 1.5rem;
+      position: relative;
+      margin-bottom: -7px;
+  }
+  .portrait {
+      width: 90%;
+      position: relative;
+      border-radius: 0.5rem;
+  }
+  .about-info {
+      display: flex;
+      flex-direction: column;
+  }
+  .portrait-container {
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+  }
+
+  .thank-you-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+  .thank-you {
+      width: 90%;
+      position: relative;
+      margin-top: 20vh;
+  }
+
+@media screen and (min-width: 1100px) {
+    .header {
+        grid-template-columns: 20% 60% 20%;
+        position: absolute;
+    }
+    .bitwebLogo {
+        width: 10%;
+        position: fixed;
+    }
+    .fa-circle-xmark {
+        right: 0rem;
+    }
+
+    .navBarDesktop {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1rem;
+        font-weight: 400;
+        grid-column: 2;
+    }
+
+    .navBarMobile {
+        display: none;
+    }
+    
+    .navItem {
+        text-decoration: none;
+        margin: 0px;
+        padding: 0.5rem 2rem;
+        color: #3b3b3b;
+        transition: 0.3s;
+        border-bottom: 2px solid transparent;
+    }
+    :hover.navItem {
+        border-bottom: 2px solid #006a8d;
+        color: #000000;
+        font-weight: 900;
+        padding-bottom: 0.6rem;
+    }
+    .welcome {
+        width: 70%;
+    }
+    .main {
+        width: 70%;
+    }
+    .main div {
+        flex-direction: row;
+        justify-content: right;
+    }
+ 
+    .serviceWidget {
+        width: 20%;
+        background-color: #6d888d;
+        border: 2px solid black;
+        color: white;
+        transition: 0.3s;
+    }
+    .serviceWidget:hover {
+        background-color: #BDF2FD;
+        font-size: 1rem;
+        font-weight: 500;
+        box-shadow: inset 0px 0px 5px white;
+        border: 2px solid white;
+        cursor: pointer;
+        color: black;
+    }
+
+    .testimonials {
+        width: 70%;
+    }
+
+    .contactContainer {
+        position: relative;
+    }
+    .contact {
+        padding-bottom: 0rem;
+        width: 90%;
+        border-top-right-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+    }
+    .contactForm {
+        width: 50%;
+    }
+    .contactForm button {
+        width: 20%;
+        transition: 0.2s;
+    }
+    .contactForm button:hover {
+        box-shadow: 0px 0px 0px black;
+        border: 2px solid #006a8d;
+        cursor: pointer;
+    }
+
+    hr {
+        width: 80%;
+    }
+
+    .services1 {
+        width: 70%;
+    }
+    .services2 {
+        width: 70%;
+    }
+    .sb1 {
+        display: none;
+    }
+    .sb2 {
+        display: block;
+    }
+    .about-info {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .portrait {
+        height: 32rem;
+        width: 32rem;
+        margin-right: 8rem;
+        margin-top: 0%;
+        box-shadow: 5px 5px 10px black;
+    }
+    .close {
+        right: -2rem;
+    }
+    .social-icons {
+        padding-bottom: 3rem;
+    }
+}
