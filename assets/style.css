@@ -56,6 +56,7 @@ li {
 
 .header {
     top: 0px;
+    left: 0px;
     width: 100%;
     display: grid;
     grid-template-columns: 25% 75%;
@@ -71,7 +72,6 @@ li {
     margin: 0.5rem 0rem 0.5rem 0.5rem;
     position: relative;
     border-radius: 50%;
-    box-shadow: 0 0 3px rgb(54, 54, 54);
     padding: 0px;
     top: 0.5rem;
     left:0.5rem;
@@ -177,15 +177,14 @@ li {
     border: 2px solid #414141;
     text-decoration: none;
     color: black;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #586cce;
     text-align: center;
-    background-color: #6d888d;
     color: white;
     box-shadow: inset 0px 0px 5px white;
     border: 2px solid white;
 }
 .serviceWidget:hover {
-    background-color: #BDF2FD;
+    background-color: #b1c1e9;
     color: black;
 }
 
@@ -202,7 +201,7 @@ li {
     width: 90%;
     border-radius: 0.5rem;
     text-align: center;
-    background-image: linear-gradient(0deg, transparent, #6d888d);
+    background-image: linear-gradient(0deg, transparent, #b1c1e9);
     margin-bottom: 3rem;
 }
 .testimonials h1 {
@@ -361,7 +360,7 @@ li {
     transition: .3s;
 }
 .contactForm input:hover {
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(235, 235, 235);
 }
 .contactForm button {
     font-family: 'Comfortaa', cursive !important;
@@ -370,14 +369,14 @@ li {
     width: 30%;
     border-radius: 0.3rem;
     box-shadow: 3px 3px 10px black;
-    background-color: #006a8d;
+    background-color: #586cce;
     color: white;
     border: 1px solid white;
 }
 
 
 a {
-    color: #006a8d;
+    color: #586cce;
 }
 a:hover {
     text-decoration: none;
@@ -536,13 +535,12 @@ a:hover {
  
     .serviceWidget {
         width: 20%;
-        background-color: #6d888d;
         border: 2px solid black;
         color: white;
         transition: 0.3s;
     }
     .serviceWidget:hover {
-        background-color: #BDF2FD;
+        background-color: #b1c1e9;
         font-size: 1rem;
         font-weight: 500;
         box-shadow: inset 0px 0px 5px white;
