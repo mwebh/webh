@@ -25,7 +25,7 @@ html {
     left: 0px;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(0deg, #dfdfdf, #ffffff);
+    background-color: #fcfcfc;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: auto;
@@ -40,7 +40,7 @@ html {
     }
 }
 .fa-brands {
-    transform: scale(130%);
+    font-size: 1.5rem;
     margin: 1rem 0rem 0rem 0rem;
 }
 
@@ -62,7 +62,7 @@ li {
     display: grid;
     grid-template-columns: 25% 75%;
     position: sticky;
-    background-image: linear-gradient(180deg, white 0 60%, transparent 99% 100%);
+    background-image: linear-gradient(180deg, white 0 60%, #ffffff00 99% 100%);
     z-index: 1;
     overflow:auto;
     padding-bottom: .5rem;
@@ -220,7 +220,7 @@ li {
     width: 90%;
     border-radius: 0.5rem;
     text-align: center;
-    background-image: linear-gradient(0deg, transparent, #b1c1e9);
+    background-image: linear-gradient(0deg, #ffffff00, #b1c1e9);
     margin-bottom: 3rem;
 }
 .testimonials h1 {
@@ -531,6 +531,10 @@ a:hover {
   }
 
 @media screen and (min-width: 1100px) {
+    
+    .fa-brands {
+        font-size: 1.5rem;
+    }
     .header {
         height: 18%;
     }
