@@ -545,6 +545,9 @@ a:hover {
     .navBarMobile a {
         font-size: 0.9rem;
     }
+    .navBarMobile {
+        width: 80%;
+    }
     
     .navItem {
         text-decoration: none;
