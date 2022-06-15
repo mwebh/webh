@@ -535,6 +535,7 @@ a:hover {
         height: 18%;
     }
     .bitwebLogo {
+        top: -2rem;
         width: 10%;
         position: fixed;
     }
