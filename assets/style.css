@@ -189,14 +189,13 @@ li {
     margin: 0.5rem;
     font-weight: 400 !important;
     padding: 0.7rem;
-    border: 2px solid #414141;
     text-decoration: none;
     color: black;
     background-color: #586cce;
     text-align: center;
+    border: 0px solid black;
+    box-shadow: inset 0px 0px 5px #414141;
     color: white;
-    box-shadow: inset 0px 0px 5px white;
-    border: 2px solid white;
 }
 .serviceWidget:hover {
     background-color: #b1c1e9;
@@ -221,7 +220,7 @@ li {
 }
 .testimonials h1 {
     color: white;
-    text-shadow: 0px 0px 3px black;
+    text-shadow: 0px 0px 2px black;
 }
 
 .contactContainer {
@@ -305,6 +304,7 @@ li {
     width: 90%;
     border-radius: 0.5rem;
     background-color: white;
+    box-shadow: 5px 5px 10px black;
 }
 .services1 h2 {
     padding: 1rem;
@@ -327,6 +327,7 @@ li {
     background-color: #414141;
     text-align: right;
     color: white;
+    box-shadow: -5px 5px 10px black;
 }
 .services2 h2 {
     padding: 1rem;
@@ -356,6 +357,12 @@ li {
 .fa-solid {
     transform: scale(120%);
     filter: saturate(0);
+    transition: 0.3s;
+}
+.fa-solid:hover {
+    filter: saturate(100%) drop-shadow(-2px 2px 0.5px rgba(0, 0, 0, 0.438));
+    transform: scale(130%);
+    text-shadow: 0px 0px 2px white;
 }
 .fa-circle-xmark {
     position: relative;
@@ -533,11 +540,14 @@ a:hover {
     }
     .header {
         height: 18%;
+        padding: 0rem 0rem 1rem 0rem;
     }
     .bitwebLogo {
-        top: -2rem;
-        width: 10%;
-        position: fixed;
+        top: -1.5rem;
+        width: 60%;
+        margin-top: -10%;
+        position: relative;
+        border-radius: 0px;
     }
     .fa-circle-xmark {
         right: 0rem;
@@ -577,9 +587,9 @@ a:hover {
  
     .serviceWidget {
         width: 20%;
-        border: 2px solid black;
         color: white;
         transition: 0.3s;
+        border: 0px solid black;
     }
     .serviceWidget:hover {
         background-color: #b1c1e9;
