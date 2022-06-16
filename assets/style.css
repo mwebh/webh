@@ -596,7 +596,6 @@ a:hover {
         font-size: 1rem;
         font-weight: 500;
         box-shadow: inset 0px 0px 5px white;
-        border: 2px solid white;
         cursor: pointer;
         color: black;
     }
