@@ -362,7 +362,7 @@ li {
 .fa-solid:hover {
     filter: saturate(100%) drop-shadow(-2px 2px 0.5px rgba(0, 0, 0, 0.438));
     transform: scale(130%);
-    text-shadow: 0px 0px 2px white;
+    text-shadow: 0px 0px 1px white;
 }
 .fa-circle-xmark {
     position: relative;
