@@ -528,9 +528,9 @@ a:hover {
       justify-content: center;
   }
   .thank-you {
-      width: 90%;
+      width: 60%;
       position: relative;
-      margin-top: 20vh;
+      padding: 2rem;
   }
 
 @media screen and (min-width: 1100px) {

@@ -3,39 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@200&display=swap" rel="stylesheet">
-    <link rel="icon" href="../Images/BitWeb Solutions alt icon with text no bg.png">
-    <title>Thank you | BitWeb Solutions</title>
+    <link rel="icon" href="../Images/webh/WebH Banner logo w slogan no bg.png">
+    <title>Thank you | WebH</title>
 </head>
 <body>
     <div class="page_container">
         <div class="header">
-            <a href="../index.html"><img src="../Images/BitWeb Solutions alt icon with text no bg.png" class="bitwebLogo" id="bitwebLogo"></a>
-
-            <nav class="navBarDesktop">
-                <a href="../index.html" class="navItem" id="navHome">Home</a>
-                <a href="./about.html" class="navItem" id="navAbout">About</a>
-                <a href="./services.html" class="navItem" id="navServices">Services</a>
-                <a href="contact.html" class="navItem" id="navContact">Contact</a>
-            </nav>
+            <a href="../index.html"><img src="../Images/webh/WebH Banner logo w slogan no bg.png" class="bitwebLogo" id="bitwebLogo"></a>
             <nav class="navBarMobile">
-                <li><a href="../index.html"><img src="../Images/Home Icon.png" alt="" class="navItemMobile"></a></li>
-                <li><a href="./about.html"><img src="../Images/About Icon.png" alt="" class="navItemMobile"></a></li>
-                <li><a href="./services.html"><img src="../Images/Services Icon 2.png" alt="" class="navItemMobile"></a></li>
-                <li><a href="contact.html"><img src="../Images/Contact Icon.png" alt="" class="navItemMobile"></a></li>
+                <label>
+                    <li><a href="../index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                </label>
+                <label>
+                    <li><a href="./about.html"><i class="fa-solid fa-circle-info"></i>About</a></li>
+                </label>
+                <label>
+                    <li><a href="./services.html"><i class="fa-solid fa-computer"></i>Services</a></li>
+                </label>
+                <label>
+                    <li><a href="./contact.html"><i class="fa-solid fa-phone"></i>Contact</a></li>
+                </label>
             </nav>
         </div>
-        <div class="thank-you-container">
-            <div class="thank-you">
-                <h1>Thank you for your message!</h1>
-                <p>We endeavour to respond to all messages within 1 business day.</p>
-                <p>You can get back to the site <a href="../index.html">here.</a></p>
+        <div class="thank-you">
+            <h1>Thank you!</h1>
+            <p>We can't wait to start working with you whether it be your next project to launch your business above and beyond
+                or whether you're just looking to improve your internal IT systems. Speak soon!
+                <br>
+                <br>
+                Click or tap <a href="../index.html">here</a> to go back to the homepage.
+            </p>
+        </div>
+        </div>
+        <div class="contactContainer" style="position: absolute;">
+            <div class="contact">                   
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/WebH-102721975822837/?ref=pages_you_manage"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
             </div>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/bba4cc1124.js" crossorigin="anonymous"></script>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "102721975822837");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 </body>
 </html>
