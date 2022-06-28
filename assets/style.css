@@ -12,7 +12,7 @@ html {
     left: 0px;
     height: 100%;
     width: 100%;
-    background-color: #fcfcfc;
+    background-color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: auto;
@@ -69,12 +69,12 @@ li {
 }
 
 .bitwebLogo {
-    width: 5rem;
+    width: 6rem;
     margin: 0rem 0rem 0.5rem 0.5rem;
     position: relative;
     border-radius: 50%;
     padding: 0px;
-    top: 0rem;
+    top: -.5rem;
     left:0.5rem;
 }
 
@@ -183,7 +183,7 @@ li {
 }
 
 .serviceWidget {
-    border-radius: 5rem;
+    border-radius: .5rem;
     font-family: 'Comfortaa', cursive !important;
     font-size: 1rem;
     margin: 0.5rem;
@@ -304,7 +304,7 @@ li {
     width: 90%;
     border-radius: 0.5rem;
     background-color: white;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 5px 5px 0px black;
 }
 .services1 h2 {
     padding: 1rem;
@@ -327,7 +327,7 @@ li {
     background-color: #414141;
     text-align: right;
     color: white;
-    box-shadow: -5px 5px 10px black;
+    box-shadow: -5px 5px 0px black;
 }
 .services2 h2 {
     padding: 1rem;
@@ -539,9 +539,31 @@ a:hover {
     color: white;
     text-decoration: none;
   }
+  .image {
+    width: 95%;
+    border-radius: .5rem;
+  }
+  .image-container {
+    width: 100%;
+    padding: 0rem;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0rem;
+  }
+  .removebg {
+    width: 80%;
+
+  }
+  .view {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
 
 @media screen and (min-width: 1100px) {
-    
+    .view {
+        flex-direction: row;
+    }
     .fa-brands {
         font-size: 1.5rem;
     }
@@ -550,8 +572,8 @@ a:hover {
         padding: 0rem 0rem 1rem 0rem;
     }
     .bitwebLogo {
-        top: -1.5rem;
-        width: 60%;
+        top: -1rem;
+        width: 50%;
         margin-top: -10%;
         position: relative;
         border-radius: 0px;
@@ -593,18 +615,10 @@ a:hover {
     }
  
     .serviceWidget {
-        width: 20%;
+        width: 100%;
         color: white;
         transition: 0.3s;
         border: 0px solid black;
-    }
-    .serviceWidget:hover {
-        background-color: #b1c1e9;
-        font-size: 1rem;
-        font-weight: 500;
-        box-shadow: inset 0px 0px 5px white;
-        cursor: pointer;
-        color: black;
     }
 
     .testimonials {
